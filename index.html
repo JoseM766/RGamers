@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RGamers</title>
+    <link rel="icon" href="./media/icon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(13, 110, 253);">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <h3>RGamers</h3>
+            </a>
+            
+            <!-- Botón tipo hamburguesa en pantalla pequeña -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menú y buscador -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Categorías -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Más vendidos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Peores reseñados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mejores reseñados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tendencias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Precio mayor a menor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Precio menor a mayor</a>
+                    </li>
+                </ul>
+
+                <!-- Buscador a la derecha -->
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Busca tu juego..." aria-label="Buscar">
+                    <button class="btn btn-outline-light" type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenedor principal -->
+    <div class="main-content">
+        <!-- Grid de lo juegos -->
+        <div class="container mt-4">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://gaming-cdn.com/images/products/2198/616x353/hollow-knight-pc-mac-game-steam-cover.jpg?v=1705490619" class="card-img-top" alt="Hollow Knight">
+                        <div class="card-body">
+                            <p class="card-text">Hollow Knight -Es un metroidvania bastante desafiante,dificl y sobre todo hermoso.</p>
+                            <a href="https://store.steampowered.com/app/367520/Hollow_Knight/" target="_blank">
+                                <button class="btn-saber-mas">Saber más</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000006442/691ba3e0801180a9864cc8a7694b6f98097f9d9799bc7e3dc6db92f086759252" class="card-img-top" alt="Celeste">
+                        <div class="card-body">
+                            <p class="card-text">Celeste -Un juego de plataformas con una historia conmovedora y un gran reto.</p>
+                            <a href="https://store.steampowered.com/app/504230/Celeste/?l=spanish" target="_blank">
+                                <button class="btn-saber-mas">Saber más</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://assets.nintendo.com/image/upload/q_auto/f_auto/ncom/es_LA/dlc/switch-dlc/the-binding-of-isaac-afterbirth-plus-dlc/individual/the-binding-of-isaac-repentance/image" class="card-img-top" alt="The Binding of Isaac">
+                        <div class="card-body">
+                            <p class="card-text">The Binding of Isaac -Es un roguelike oscuro y adictivo que seguro te encantara.</p>
+                            <a href="https://store.steampowered.com/app/250900/The_Binding_of_Isaac_Repentance/" target="_blank">
+                                <button class="btn-saber-mas">Saber más</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000009921/44bea8c565db26c0c470a6325a47c9ea031633945cb91e4b5e1b1a39b01a2cdb" class="card-img-top" alt="Undertale">
+                        <div class="card-body">
+                            <p class="card-text">Undertale - Es un RPG con elecciones morales profundas y con iconicos personajes.</p>
+                            <a href="https://store.steampowered.com/app/391540/Undertale/" target="_blank">
+                                <button class="btn-saber-mas">Saber más</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://gaming-cdn.com/images/news/articles/5980/cover/stardew-valley-includes-new-mining-and-fishing-features-with-patch-1-6-4-cover662233115665e.jpg" class="card-img-top" alt="Stardew Valley">
+                        <div class="card-body">
+                            <p class="card-text">Stardew Valley - Un juego de simulación de granja relajante que es muy adictivo.</p>
+                            <a href="https://store.steampowered.com/app/413150/Stardew_Valley/" target="_blank">
+                                <button class="btn-saber-mas">Saber más</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://assets.nintendo.com/image/upload/q_auto/f_auto/ncom/software/switch/70010000016330/d94d2186ef03c930392253c83c84af0c73b7e57cd902a526b09b4155a25930fe" class="card-img-top" alt="Cuphead">
+                        <div class="card-body">
+                            <p class="card-text">Cuphead -Un juego de acción y plataformas con estilo de dibujos clásicos.</p>
+                            <a href="https://store.steampowered.com/app/268910/Cuphead/" target="_blank">
+                                <button class="btn-saber-mas">Saber más</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://assets.nintendo.com/image/upload/q_auto/f_auto/ncom/software/switch/70010000001990/cd98a2abfb3daabf755ee6230142a01cf1b2f717d8831093545595280539f1eb" class="card-img-top" alt="Super Meat Boy">
+                        <div class="card-body">
+                            <p class="card-text">Super Meat Boy - Un juego de plataformas difícil pero adictivo que seguro te estresara.</p>
+                            <a href="https://store.steampowered.com/app/40800/Super_Meat_Boy/" target="_blank">
+                                <button class="btn-saber-mas">Saber más</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://assets.nintendo.com/image/upload/q_auto/f_auto/ncom/software/switch/70010000001702/dac3a26570b5ca1ddf703bf0add7cc7c527f71a2b56521baf69e20c7a573c610" class="card-img-top" alt="Terraria">
+                        <div class="card-body">
+                            <p class="card-text">Terraria - Un juego de exploración y construcción en 2D donde nunca te aburriras.</p>
+                            <a href="https://store.steampowered.com/app/105600/Terraria/" target="_blank">
+                                <button class="btn-saber-mas">Saber más</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://assets.nintendo.com/image/upload/q_auto/f_auto/ncom/software/switch/70010000033131/dbc8c55a21688b446a5c57711b726956483a14ef8c5ddb861f897c0595ccb6b5" class="card-img-top" alt="Hades">
+                        <div class="card-body">
+                            <p class="card-text">Hades - Roguelike de acción con combates intensos y narrativa profunda.</p>
+                            <a href="https://store.steampowered.com/app/1145360/Hades/" target="_blank">
+                                <button class="btn-saber-mas">Saber más</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://vanadis.es/wp-content/uploads/2017/03/maxresdefault-1-1024x576.jpg" class="card-img-top" alt="Papers, Please">
+                        <div class="card-body">
+                            <p class="card-text">Papers, Please - Simulador de inspección de inmigración en un régimen totalitario.</p>
+                            <a href="https://store.steampowered.com/app/239030/Papers_Please/" target="_blank">
+                                <button class="btn-saber-mas">Saber más</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000029168/4690229e4696dc693a9edb823cdbb5193717de984d0ee2efba9ed91f1e15a8a6" class="card-img-top" alt="Shovel Knight">
+                        <div class="card-body">
+                            <p class="card-text">Shovel Knight - Es un plataformas retro con acción desafiante y estilo pixelado que seguro sera un reto.</p>
+                            <a href="https://store.steampowered.com/app/250760/Shovel_Knight_Treasure_Trove/" target="_blank">
+                                <button class="btn-saber-mas">Saber más</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/ncom/software/switch/70010000000964/a28a81253e919298beab2295e39a56b7a5140ef15abdb56135655e5c221b2a3a" class="card-img-top" alt="Minecraft">
+                        <div class="card-body">
+                            <p class="card-text">Minecraft - Puedes construir, explorar y intenta sobrevir en un mundo de bloques y peligros.</p>
+                            <a href="https://www.minecraft.net/es-es/store/minecraft-deluxe-collection-pc?tabs=%7Bdetails%3A0%7D" target="_blank">
+                                <button class="btn-saber-mas">Saber más</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3 mt-4">
+        &copy; 2025 Reseñas de Videojuegos. Todos los derechos reservados.
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
